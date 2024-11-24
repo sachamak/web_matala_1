@@ -1,0 +1,28 @@
+
+###
+
+GET http://localhost:3000/posts
+###
+
+GET http://localhost:3000/posts?owner=Sacha
+###
+
+GET http://localhost:3000/posts/673ccced02ab7c0129208d36
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title":"TEST",
+    "content":"TEST",
+    "owner":"TEST"
+}
+###
+
+DELETE http://localhost:3000/posts/
+
+###
+
+DELETE http://localhost:3000/posts/673ccced02ab7c0129208d36
